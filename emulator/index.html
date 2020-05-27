@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>IoT-Emulator</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row row-cols-1">
+            <div class="col">
+                <h5>Quiet-Way Sensor Emulator</h5>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">Address</span></div><input class="form-control" type="text" value="http://localhost:8080/api/sensors/"></div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">Id</span></div><input class="form-control" type="text"></div>
+            </div>
+            <div class="col">
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">token</span></div><input class="form-control" type="text"></div>
+            </div>
+            <div class="col d-flex align-items-lg-center">
+                <h6>Sendmode</h6>
+            </div>
+            <div class="col d-flex align-items-lg-center"><select class="custom-select"><option value="1" selected="">Normal</option><option value="2">Troubled</option><option value="3">Critical</option></select><button class="btn btn-primary" type="button">Send</button></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
