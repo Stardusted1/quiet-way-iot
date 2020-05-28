@@ -2,7 +2,7 @@ $('#start-requests').click(() => {
     alert("clicked")
 })
 
-let main = angular.module('main', [])
+let emulator = angular.module('main', [])
     .controller('mainController', function ($http, $scope) {
         $scope.startSequence = () => {
             console.log("sequence started")
@@ -18,7 +18,7 @@ let main = angular.module('main', [])
                 setInterval(
                     () => {
                         if (num < dataset.length) {
-                            $http.post(address + "/" + sensorId + '/' + token, dataset[num++]).then(
+                            $http.put(address + "/" + sensorId + '/' + token, dataset[num++]).then(
                                 (data) => {
                                     console.info("successful " + data)
                                 }
